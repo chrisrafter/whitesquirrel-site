@@ -257,13 +257,15 @@
     </svg>
     <h2>What's the #1 thing you want AI to fix in your business?</h2>
     <p>Tell us below and hop on the launch list. A question this specific usually gets a personal reply. 🐿️</p>
-    <!-- TODO: replace action with your MailerLite/Kit form endpoint -->
-    <form id="leadForm" action="REPLACE_WITH_EMAIL_PROVIDER_FORM_ACTION" method="POST">
+    <form id="leadForm" action="https://assets.mailerlite.com/jsonp/2588737/forms/196415399753942059/subscribe" method="POST">
       <textarea name="fields[pain_point]" placeholder="e.g., email eats two hours of my day… invoicing steals my weekends… I never follow up with leads fast enough…" required></textarea>
       <input type="email" name="fields[email]" placeholder="you@yourbusiness.com" required>
-      <button class="btn" type="submit">Join the launch list 🌰</button>
-      <p class="fine">No spam, ever. One useful email at launch + occasional AI tips for local business owners. Unsubscribe anytime.</p>
+      <input type="hidden" name="ml-submit" value="1">
+      <input type="hidden" name="anticsrf" value="true">
+      <button class="btn" type="submit" id="submitBtn">Join the launch list 🌰</button>
+      <p class="fine">No spam, ever. One useful email at launch + occasional AI tips for local business owners. Unsubscribe anytime. You'll get a quick confirmation email first — click it so we can stay in touch.</p>
     </form>
+    <div class="success-msg" id="successMsg" style="display:none;background:#2e5339;color:#fff;padding:16px;border-radius:12px;margin-top:16px">🐿️ Got it — check your inbox for a confirmation email to lock in your spot!</div>
   </div>
 
   <section>
@@ -332,10 +334,24 @@
 
 <script>
 document.getElementById('leadForm').addEventListener('submit', function(e){
-  if(this.action.indexOf('REPLACE_WITH') !== -1){
-    e.preventDefault();
-    alert('Form not connected yet — email provider endpoint needed.');
-  }
+  e.preventDefault();
+  var form = this;
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Joining…';
+  fetch(form.action, { method: 'POST', body: new FormData(form) })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if (data && data.success !== false) {
+        form.style.display = 'none';
+        document.getElementById('successMsg').style.display = 'block';
+      } else { throw new Error('subscribe failed'); }
+    })
+    .catch(function(){
+      btn.disabled = false;
+      btn.textContent = 'Join the launch list 🌰';
+      alert('Hmm, that didn\'t go through — mind trying again? Or email hello@whitesquirrel.ai and we\'ll add you.');
+    });
 });
 </script>
 
