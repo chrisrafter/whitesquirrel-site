@@ -205,3 +205,9 @@ footer .legal{border-top:1px solid #3A4557;margin-top:44px;padding-top:22px;disp
 @media(max-width:760px){footer .cols{grid-template-columns:1fr}}
 
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* single-profile layout (About) */
+.owners.solo{grid-template-columns:1fr;max-width:960px;margin:0 auto}
+.owners.solo .person{flex-direction:row}
+.owners.solo .portrait{flex:0 0 38%;aspect-ratio:auto;min-height:100%}
+@media(max-width:760px){.owners.solo .person{flex-direction:column}.owners.solo .portrait{aspect-ratio:4/3}}
