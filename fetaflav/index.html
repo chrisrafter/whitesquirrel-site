@@ -172,6 +172,35 @@
   .social{display:inline-flex;align-items:center;gap:8px}
   .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:rgba(255,255,255,.55)}
 
+
+  /* Featured event banner (Halloween class) */
+  .ev-banner{position:relative;overflow:hidden;color:#fff;text-decoration:none;display:block;
+    background:linear-gradient(110deg,#2A1B47 0%,#5B3C8C 35%,#8C6CC0 55%,#5B3C8C 75%,#2A1B47 100%);background-size:250% 100%;animation:evShift 10s ease-in-out infinite}
+  @keyframes evShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  .ev-banner .wrap{position:relative;z-index:2;display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;padding-top:18px;padding-bottom:18px}
+  .ev-ghost{width:74px;height:74px;animation:evBob 3.2s ease-in-out infinite;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35))}
+  @keyframes evBob{0%,100%{transform:translateY(2px) rotate(-4deg)}50%{transform:translateY(-8px) rotate(4deg)}}
+  .ev-kicker{display:inline-flex;align-items:center;gap:8px;font:800 12px/1 "Figtree";letter-spacing:.16em;text-transform:uppercase;color:#FFD27A}
+  .ev-kicker i{width:8px;height:8px;border-radius:50%;background:#F28A2E;box-shadow:0 0 0 0 rgba(242,138,46,.7);animation:evPing 1.6s ease-out infinite}
+  @keyframes evPing{to{box-shadow:0 0 0 10px rgba(242,138,46,0)}}
+  .ev-title{font:400 clamp(28px,3.4vw,40px)/1 "Bebas Neue";letter-spacing:.03em;margin:6px 0 4px}
+  .ev-title em{font-style:normal;color:#F28A2E}
+  .ev-meta{font-size:15px;color:rgba(255,255,255,.85)}
+  .ev-cta{display:inline-flex;align-items:center;gap:8px;background:#F28A2E;color:#2A1B47;font-weight:800;border-radius:999px;padding:13px 22px;white-space:nowrap;animation:evPulse 2.4s ease-in-out infinite}
+  .ev-banner:hover .ev-cta{background:#ff9d47}
+  @keyframes evPulse{0%,100%{box-shadow:0 0 0 0 rgba(242,138,46,.55)}60%{box-shadow:0 0 0 12px rgba(242,138,46,0)}}
+  .ev-bat{position:absolute;z-index:1;width:46px;color:#C9B2E6;opacity:.6;animation:evFlap .45s ease-in-out infinite alternate,evFly 16s linear infinite}
+  @keyframes evFlap{to{transform:scaleY(.5)}}
+  @keyframes evFly{from{left:-60px}to{left:105%}}
+  .ev-sparkle{position:absolute;z-index:1;color:#FFD27A;font-size:14px;animation:evTw 2.4s ease-in-out infinite}
+  @keyframes evTw{0%,100%{opacity:.2;transform:scale(.7)}50%{opacity:1;transform:scale(1.1)}}
+  .ev-ticker{position:relative;z-index:2;background:rgba(0,0,0,.28);overflow:hidden;white-space:nowrap;font:600 13px/1 "Figtree";letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.85)}
+  .ev-ticker div{display:inline-block;padding:9px 0;animation:evTick 28s linear infinite}
+  .ev-ticker span{margin:0 18px}
+  @keyframes evTick{to{transform:translateX(-50%)}}
+  @media (max-width:760px){.ev-banner .wrap{grid-template-columns:auto 1fr;gap:14px}.ev-ghost{width:54px;height:54px}.ev-cta{grid-column:1/-1;justify-content:center}.ev-meta{font-size:14px}}
+  @media (prefers-reduced-motion:reduce){.ev-banner,.ev-ghost,.ev-cta,.ev-bat,.ev-sparkle,.ev-ticker div,.ev-kicker i{animation:none!important}.ev-bat{display:none}}
+
   /* Responsive */
   @media (max-width:980px){
     .hero-in{grid-template-columns:1fr;padding:56px 24px 64px}
@@ -218,6 +247,7 @@
     <nav class="nav-links" aria-label="Main">
       <a href="#menu">Menu</a>
       <a href="#gallery">Food</a>
+      <a href="events/">Events</a>
       <a href="#story">Our Story</a>
       <a href="#visit">Visit</a>
       <a class="btn btn-sky" href="tel:+18282436094">Call (828) 243-6094</a>
@@ -225,6 +255,23 @@
   </div>
 </header>
 
+<a class="ev-banner" href="events/halloween-cake-decorating.html" aria-label="Featured event: Halloween Cake Decorating Class, Wednesday October 28 at 6:30 PM. See details and get tickets.">
+  <span class="ev-bat" style="top:14%;animation-delay:0s,-3s" aria-hidden="true"><svg viewBox="0 0 64 32" fill="currentColor"><path d="M32 10c-4-6-10-8-14-6 2 2 2 6 0 8-6-8-14-8-18-2 6 0 10 4 10 10 6-6 14-4 18 2 1-2 2-3 4-3s3 1 4 3c4-6 12-8 18-2 0-6 4-10 10-10-4-6-12-6-18 2-2-2-2-6 0-8-4-2-10 0-14 6z"/></svg></span>
+  <span class="ev-bat" style="top:52%;width:34px;animation-delay:-.2s,-11s" aria-hidden="true"><svg viewBox="0 0 64 32" fill="currentColor"><path d="M32 10c-4-6-10-8-14-6 2 2 2 6 0 8-6-8-14-8-18-2 6 0 10 4 10 10 6-6 14-4 18 2 1-2 2-3 4-3s3 1 4 3c4-6 12-8 18-2 0-6 4-10 10-10-4-6-12-6-18 2-2-2-2-6 0-8-4-2-10 0-14 6z"/></svg></span>
+  <span class="ev-sparkle" style="top:18%;left:38%" aria-hidden="true">✦</span>
+  <span class="ev-sparkle" style="top:62%;left:62%;animation-delay:-1.2s" aria-hidden="true">✦</span>
+  <span class="ev-sparkle" style="top:30%;left:84%;animation-delay:-.6s" aria-hidden="true">✦</span>
+  <div class="wrap">
+    <img class="ev-ghost" src="assets/events/ghost-cake.svg" alt="" style="border-radius:16px">
+    <div>
+      <span class="ev-kicker"><i></i>Featured event · Feta Flav &amp; The Gilded Owl</span>
+      <div class="ev-title">Halloween <em>Cake Decorating</em> Class</div>
+      <div class="ev-meta">Wed, Oct 28 · 6:30 PM · Oklawaha Brewing · with Chef Ashleigh</div>
+    </div>
+    <span class="ev-cta">Get tickets →</span>
+  </div>
+  <div class="ev-ticker" aria-hidden="true"><div><span>🎃 Halloween Cake Decorating</span><span>✦ Wed Oct 28 · 6:30 PM</span><span>👻 Oklawaha Brewing</span><span>✦ 6" cake + a drink included</span><span>🦇 No experience necessary</span><span>✦ $49 early bird through 10/21</span><span>🎃 Halloween Cake Decorating</span><span>✦ Wed Oct 28 · 6:30 PM</span><span>👻 Oklawaha Brewing</span><span>✦ 6" cake + a drink included</span><span>🦇 No experience necessary</span><span>✦ $49 early bird through 10/21</span><span>🎃 Halloween Cake Decorating</span><span>✦ Wed Oct 28 · 6:30 PM</span><span>👻 Oklawaha Brewing</span><span>✦ 6" cake + a drink included</span><span>🦇 No experience necessary</span><span>✦ $49 early bird through 10/21</span><span>🎃 Halloween Cake Decorating</span><span>✦ Wed Oct 28 · 6:30 PM</span><span>👻 Oklawaha Brewing</span><span>✦ 6" cake + a drink included</span><span>🦇 No experience necessary</span><span>✦ $49 early bird through 10/21</span></div></div>
+</a>
 <main id="top">
   <section class="hero" style="padding:0">
     <div class="wrap hero-in">
@@ -486,6 +533,5 @@
   links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => links.classList.remove("open")));
   document.getElementById("yr").textContent = new Date().getFullYear();
 </script>
-<script src="switcher.js"></script>
 </body>
 </html>

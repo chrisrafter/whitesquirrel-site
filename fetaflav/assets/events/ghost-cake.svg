@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a two-tier Halloween cake with drippy frosting and a ghost topper">
+<defs><radialGradient id="bg" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#C9B2E6"/><stop offset="1" stop-color="#8C6CC0"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#bg)"/>
+<g fill="#fff" opacity=".85"><circle cx="60" cy="70" r="3"/><circle cx="340" cy="60" r="2.5"/><circle cx="320" cy="140" r="2"/><circle cx="80" cy="170" r="2"/><path d="M350 100l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/><path d="M48 116l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></g>
+<ellipse cx="200" cy="350" rx="150" ry="18" fill="#2A1B47" opacity=".25"/>
+<rect x="70" y="320" width="260" height="20" rx="10" fill="#EDE6F7"/>
+<rect x="95" y="232" width="210" height="92" rx="14" fill="#2A1B47"/>
+<path d="M95 246c0-8 6-14 14-14h182c8 0 14 6 14 14v8c-10 0-10 18-20 18s-10-12-20-12-10 26-21 26-10-20-21-20-10 14-20 14-10-22-21-22-10 16-20 16-11-10-21-10-10 18-20 18-6-8-6-8z" fill="#F28A2E"/>
+<rect x="128" y="160" width="144" height="76" rx="12" fill="#F6B6D0"/>
+<path d="M128 172c0-7 5-12 12-12h120c7 0 12 5 12 12v6c-8 0-8 16-16 16s-8-10-16-10-8 20-17 20-8-16-17-16-8 12-16 12-8-18-17-18-8 14-16 14-6-8-6-8z" fill="#fff"/>
+<g fill="#F28A2E"><rect x="150" y="205" width="10" height="4" rx="2" transform="rotate(30 155 207)"/><rect x="200" y="215" width="10" height="4" rx="2" transform="rotate(-20 205 217)"/><rect x="240" y="203" width="10" height="4" rx="2" transform="rotate(60 245 205)"/></g>
+<g fill="#9DE0C8"><rect x="175" y="220" width="10" height="4" rx="2" transform="rotate(-40 180 222)"/><rect x="225" y="225" width="10" height="4" rx="2" transform="rotate(10 230 227)"/></g>
+<g fill="#FFD27A"><circle cx="120" cy="290" r="4"/><circle cx="160" cy="300" r="4"/><circle cx="210" cy="292" r="4"/><circle cx="255" cy="303" r="4"/><circle cx="285" cy="288" r="4"/></g>
+<path d="M200 70c-28 0-46 22-46 50v42c0 6 6 6 9 2l8-8 9 9 10-9 10 9 10-9 9 9 8-8c3 4 9 4 9-2v-42c0-28-18-50-46-50z" fill="#fff"/>
+<ellipse cx="186" cy="112" rx="6" ry="9" fill="#2A1B47"/><ellipse cx="214" cy="112" rx="6" ry="9" fill="#2A1B47"/>
+<ellipse cx="200" cy="132" rx="7" ry="8" fill="#2A1B47"/>
+<ellipse cx="176" cy="126" rx="7" ry="4" fill="#F6B6D0"/><ellipse cx="224" cy="126" rx="7" ry="4" fill="#F6B6D0"/>
+</svg>

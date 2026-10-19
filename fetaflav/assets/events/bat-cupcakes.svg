@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of three cupcakes with purple, orange and mint frosting topped with little bats">
+<rect width="400" height="400" fill="#FFF3E2"/>
+<g fill="#F6B6D0" opacity=".5"><circle cx="70" cy="80" r="50"/><circle cx="340" cy="320" r="60"/></g>
+<g id="cup">
+</g>
+<g transform="translate(40 150)">
+<path d="M10 120l12 90h76l12-90z" fill="#2B4896"/><path d="M30 120l4 90M50 120v90M70 120v90M90 120l-4 90" stroke="#52B5DA" stroke-width="3"/>
+<path d="M0 124c0-40 24-70 60-70s60 30 60 70c-10 6-110 6-120 0z" fill="#9B7BD0"/><path d="M20 80c10-26 70-26 80 0-20-6-60-6-80 0z" fill="#B79AD6"/>
+<path d="M60 36c-8-10-22-12-34-4 8 0 12 6 10 12 8-6 16-4 24 2 8-6 16-8 24-2-2-6 2-12 10-12-12-8-26-6-34 4z" fill="#2A1B47"/><circle cx="56" cy="38" r="2" fill="#fff"/><circle cx="64" cy="38" r="2" fill="#fff"/>
+</g>
+<g transform="translate(140 110)">
+<path d="M10 140l12 100h76l12-100z" fill="#F28A2E"/><path d="M30 140l4 100M50 140v100M70 140v100M90 140l-4 100" stroke="#FFD27A" stroke-width="3"/>
+<path d="M0 144c0-46 24-80 60-80s60 34 60 80c-10 6-110 6-120 0z" fill="#fff"/><path d="M24 96c12-26 60-26 72 0-20-8-52-8-72 0z" fill="#F6B6D0"/>
+<g fill="#F28A2E"><rect x="30" y="115" width="10" height="4" rx="2" transform="rotate(30 35 117)"/><rect x="80" y="120" width="10" height="4" rx="2" transform="rotate(-30 85 122)"/></g><g fill="#9B7BD0"><rect x="55" y="128" width="10" height="4" rx="2"/></g>
+<path d="M60 40c-10-12-28-14-42-4 10 0 14 8 12 14 10-8 20-4 30 2 10-6 20-10 30-2-2-6 2-14 12-14-14-10-32-8-42 4z" fill="#2A1B47"/><circle cx="55" cy="42" r="2.4" fill="#fff"/><circle cx="65" cy="42" r="2.4" fill="#fff"/>
+</g>
+<g transform="translate(240 150)">
+<path d="M10 120l12 90h76l12-90z" fill="#2B4896"/><path d="M30 120l4 90M50 120v90M70 120v90M90 120l-4 90" stroke="#52B5DA" stroke-width="3"/>
+<path d="M0 124c0-40 24-70 60-70s60 30 60 70c-10 6-110 6-120 0z" fill="#9DE0C8"/><path d="M20 80c10-26 70-26 80 0-20-6-60-6-80 0z" fill="#C2F0DF"/>
+<path d="M60 36c-8-10-22-12-34-4 8 0 12 6 10 12 8-6 16-4 24 2 8-6 16-8 24-2-2-6 2-12 10-12-12-8-26-6-34 4z" fill="#2A1B47"/><circle cx="56" cy="38" r="2" fill="#fff"/><circle cx="64" cy="38" r="2" fill="#fff"/>
+</g>
+<rect x="20" y="360" width="360" height="12" rx="6" fill="#2A1B47" opacity=".15"/>
+</svg>

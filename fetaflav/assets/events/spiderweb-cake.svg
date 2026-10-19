@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Top-down illustration of a round cake decorated with a piped spiderweb and a tiny spider">
+<rect width="400" height="400" fill="#F28A2E"/>
+<g fill="#2A1B47" opacity=".12"><circle cx="40" cy="40" r="30"/><circle cx="360" cy="360" r="40"/><circle cx="370" cy="40" r="16"/></g>
+<circle cx="200" cy="200" r="150" fill="#EDE6F7"/>
+<circle cx="200" cy="200" r="132" fill="#2A1B47"/>
+<g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"><circle cx="200" cy="200" r="22"/><circle cx="200" cy="200" r="54"/><circle cx="200" cy="200" r="86"/><circle cx="200" cy="200" r="116"/><path d="M200 84v232M84 200h232M118 118l164 164M282 118L118 282"/></g>
+<g fill="#F6B6D0"><circle cx="200" cy="74" r="8"/><circle cx="289" cy="111" r="8"/><circle cx="326" cy="200" r="8"/><circle cx="289" cy="289" r="8"/><circle cx="200" cy="326" r="8"/><circle cx="111" cy="289" r="8"/><circle cx="74" cy="200" r="8"/><circle cx="111" cy="111" r="8"/></g>
+<line x1="262" y1="140" x2="262" y2="168" stroke="#fff" stroke-width="2"/>
+<g transform="translate(262 180)"><g stroke="#13285A" stroke-width="3" stroke-linecap="round"><path d="M-8-4l-12-8M-8 2l-14 0M-8 8l-12 8M8-4l12-8M8 2l14 0M8 8l12 8"/></g><circle r="11" fill="#13285A"/><circle cx="-4" cy="-3" r="2.5" fill="#fff"/><circle cx="4" cy="-3" r="2.5" fill="#fff"/></g>
+</svg>

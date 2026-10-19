@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of a pumpkin-shaped cake with a piped jack-o-lantern face">
+<rect width="400" height="400" fill="#2A1B47"/>
+<g fill="#B79AD6" opacity=".35"><circle cx="330" cy="80" r="40"/></g>
+<g fill="#FFD27A"><circle cx="60" cy="60" r="2"/><circle cx="120" cy="40" r="2"/><circle cx="280" cy="50" r="2"/><circle cx="360" cy="160" r="2"/><circle cx="40" cy="180" r="2"/></g>
+<path d="M60 90l18-10 18 10-6-16 12-10-16 2-8-14-8 14-16-2 12 10z" fill="#3F2A66"/>
+<ellipse cx="200" cy="352" rx="140" ry="16" fill="#000" opacity=".3"/>
+<rect x="80" y="326" width="240" height="18" rx="9" fill="#EDE6F7"/>
+<g fill="#F28A2E"><ellipse cx="150" cy="250" rx="70" ry="80"/><ellipse cx="250" cy="250" rx="70" ry="80"/></g>
+<ellipse cx="200" cy="250" rx="62" ry="86" fill="#F7A04B"/>
+<path d="M200 166c0 50 0 120 0 168" stroke="#D9701A" stroke-width="4" fill="none" opacity=".6"/>
+<path d="M150 172c-20 40-20 120 0 156M250 172c20 40 20 120 0 156" stroke="#D9701A" stroke-width="4" fill="none" opacity=".5"/>
+<path d="M196 168c-4-22 6-38 22-44" stroke="#3E7D4A" stroke-width="12" stroke-linecap="round" fill="none"/>
+<path d="M214 150c18-18 40-10 46 4-20 6-34 4-46-4z" fill="#5FA86B"/>
+<path d="M160 230l22 18-26 6zM240 230l-22 18 26 6z" fill="#2A1B47"/>
+<path d="M200 262l10 16h-20z" fill="#2A1B47"/>
+<path d="M146 290c18 22 90 22 108 0-8 26-30 34-54 34s-46-8-54-34z" fill="#2A1B47"/>
+<g fill="#F7A04B"><rect x="172" y="294" width="12" height="12" rx="2"/><rect x="214" y="294" width="12" height="12" rx="2"/></g>
+<g stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"><path d="M120 330c10-8 20 8 30 0s20 8 30 0 20 8 30 0 20 8 30 0 20 8 30 0"/></g>
+</svg>

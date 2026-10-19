@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Illustration of two pints of beer clinking together with a slice of cake">
+<rect width="400" height="400" fill="#2B4896"/>
+<g fill="#52B5DA" opacity=".25"><circle cx="320" cy="90" r="80"/></g>
+<g fill="#FFD27A"><path d="M200 50l5 14 14 5-14 5-5 14-5-14-14-5 14-5z"/><path d="M160 90l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/><path d="M240 86l3 8 8 3-8 3-3 8-3-8-8-3 8-3z"/></g>
+<g transform="rotate(-12 130 230)"><path d="M90 130h84l-8 180h-68z" fill="#F7B32B"/><path d="M90 130h84l-2 30H92z" fill="#fff"/><path d="M88 128c4-20 22-20 28-10 6-14 28-14 32 0 8-10 28-6 26 10z" fill="#fff"/><path d="M174 170c26 0 30 70 0 70" stroke="#FAF7F0" stroke-width="10" fill="none" opacity=".7"/><g fill="#fff" opacity=".7"><circle cx="120" cy="220" r="4"/><circle cx="140" cy="250" r="3"/><circle cx="110" cy="270" r="3"/></g></g>
+<g transform="rotate(12 270 230)"><path d="M226 130h84l-8 180h-68z" fill="#E98A2A"/><path d="M226 130h84l-2 30H228z" fill="#fff"/><path d="M224 128c4-20 22-20 28-10 6-14 28-14 32 0 8-10 28-6 26 10z" fill="#fff"/><path d="M226 170c-26 0-30 70 0 70" stroke="#FAF7F0" stroke-width="10" fill="none" opacity=".7"/><g fill="#fff" opacity=".7"><circle cx="260" cy="220" r="4"/><circle cx="280" cy="250" r="3"/><circle cx="250" cy="270" r="3"/></g></g>
+<g transform="translate(150 318)"><path d="M0 40l100-30v30z" fill="#F6B6D0"/><path d="M0 40h100v26H0z" fill="#5A3A2E"/><path d="M0 52h100" stroke="#fff" stroke-width="5"/><circle cx="84" cy="14" r="7" fill="#E2453C"/></g>
+</svg>
