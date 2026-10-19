@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Feta Flav | Greek Food in Hendersonville, NC</title>
+<meta name="description" content="Feta Flav serves gyros, Greek dips, feta fries and more inside Oklawaha Brewing at 147 1st Ave E, Hendersonville, NC.">
+<link rel="icon" href="assets/badge.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#2B4896;      /* logo field */
+    --ink:#13285A;       /* menu headings */
+    --sky:#52B5DA;       /* logo accent panel */
+    --teal:#1A9AAB;      /* menu prices / rules */
+    --feta:#FAF7F0;      /* page */
+    --paper:#FFFFFF;
+    --stone:#E9E4D8;
+    --text:#1D2433;
+    --muted:#5B6475;
+    --radius:14px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{margin:0;background:var(--feta);color:var(--text);font:400 17px/1.6 "Figtree",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  h1,h2,h3,.bebas{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;line-height:.95;margin:0}
+  .eyebrow{font:600 13px/1 "Figtree",sans-serif;letter-spacing:.18em;text-transform:uppercase}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;transition:transform .15s ease, background .15s ease}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-sky{background:var(--sky);color:var(--ink)}
+  .btn-sky:hover{background:#6cc3e3}
+  .btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover{background:var(--ink)}
+
+  /* Greek key strip */
+  .meander{height:22px;background-color:var(--teal);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cpath d='M0 19.5H44M4 19.5V2.5H32V15H14V8.5H24' fill='none' stroke='%23ffffff' stroke-width='2.2'/%3E%3C/svg%3E");
+    background-repeat:repeat-x;background-size:44px 22px}
+  .meander.navy{background-color:var(--navy)}
+
+  /* Nav */
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(43,72,150,.97);backdrop-filter:saturate(1.2) blur(6px);color:#fff}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand img{height:46px;width:auto;border-radius:6px}
+  .brand span{font-family:"Bebas Neue";font-size:26px;letter-spacing:.04em}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{text-decoration:none;font-weight:600;font-size:15px;opacity:.9}
+  .nav-links a:hover{opacity:1;color:var(--sky)}
+  .nav-links .btn{padding:10px 18px;opacity:1}
+  .nav-links .btn:hover{color:var(--ink)}
+  .menu-toggle{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer;padding:6px}
+
+  /* Hero */
+  .hero{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-8%;top:0;bottom:0;width:38%;background:var(--sky);transform:skewX(-8deg);transform-origin:top;opacity:.95}
+  .hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding:72px 24px 84px}
+  .hero .eyebrow{color:var(--sky)}
+  .hero h1{font-size:clamp(64px,9vw,120px);margin:18px 0 18px}
+  .hero h1 em{font-style:normal;color:var(--sky)}
+  .hero p.lede{font-size:19px;max-width:30em;color:rgba(255,255,255,.88);margin:0 0 30px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-meta{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;font-size:14px;color:rgba(255,255,255,.8)}
+  .hero-meta b{color:#fff;font-weight:700}
+  .stack{position:relative;height:520px}
+  .stack figure{position:absolute;margin:0;border-radius:var(--radius);overflow:hidden;box-shadow:0 22px 50px rgba(8,18,48,.35);border:6px solid #fff;background:#fff}
+  .stack img{width:100%;height:100%;object-fit:cover}
+  .stack .a{width:62%;height:74%;left:4%;top:4%;transform:rotate(-3deg)}
+  .stack .b{width:48%;height:52%;right:0;top:0;transform:rotate(4deg)}
+  .stack .c{width:52%;height:40%;right:6%;bottom:2%;transform:rotate(-2deg)}
+  .stamp{position:absolute;left:-2%;bottom:0;width:150px;height:150px;border-radius:50%;overflow:hidden;border:5px solid #fff;box-shadow:0 14px 30px rgba(8,18,48,.35);z-index:3;transform:rotate(-8deg)}
+
+  /* Info strip */
+  .strip{background:var(--paper);border-bottom:1px solid var(--stone)}
+  .strip-in{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+  .strip-item{padding:26px 24px;display:flex;gap:14px;align-items:flex-start}
+  .strip-item + .strip-item{border-left:1px solid var(--stone)}
+  .strip-item svg{flex:none;color:var(--teal)}
+  .strip-item h3{font-size:24px;color:var(--ink)}
+  .strip-item p{margin:4px 0 0;color:var(--muted);font-size:15px}
+
+  section{padding:96px 0;scroll-margin-top:70px}
+  .pc{display:inline-block;width:96px;text-align:center}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:40px;flex-wrap:wrap}
+  .sec-head .eyebrow{color:var(--teal)}
+  .sec-head h2{font-size:clamp(48px,6vw,76px);color:var(--ink);margin-top:10px}
+  .sec-head p{max-width:30em;color:var(--muted);margin:0}
+
+  /* Menu */
+  #menu{background:var(--feta)}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+  .tab{font:600 15px "Figtree",sans-serif;padding:10px 18px;border-radius:999px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+  .tab[aria-selected="true"]{background:var(--ink);color:#fff}
+  .menu-card{background:var(--paper);border-radius:20px;padding:36px 40px;box-shadow:0 1px 0 var(--stone),0 20px 40px -24px rgba(19,40,90,.25)}
+  .menu-note{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:0 0 18px;padding-bottom:14px;border-bottom:3px solid var(--teal)}
+  .menu-note h3{font-size:34px;color:var(--ink)}
+  .menu-note .cols{display:flex;gap:0;text-align:center;font:400 18px "Bebas Neue";color:var(--ink);letter-spacing:.05em;align-self:flex-end}
+  .items{display:grid;grid-template-columns:1fr 1fr;column-gap:56px}
+  .items.single{grid-template-columns:1fr}
+  .item{padding:18px 0;border-bottom:1px solid var(--stone)}
+  .item-top{display:flex;align-items:baseline;gap:10px}
+  .item-name{font-family:"Bebas Neue";font-size:25px;color:var(--ink);letter-spacing:.03em}
+  .item-name small{font-size:18px;color:var(--muted);margin-left:6px}
+  .dots{flex:1;border-bottom:2px dotted #c9cfdb;transform:translateY(-6px)}
+  .price{font-family:"Bebas Neue";font-size:25px;color:var(--teal);white-space:nowrap}
+  .item p{margin:4px 0 0;color:var(--muted);font-size:15.5px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#1c7a3e;background:#e3f4e8;border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:2px}
+  .sides-band{margin-top:28px;background:var(--teal);color:#fff;border-radius:16px;padding:22px 28px;display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+  .sides-band h4{font:400 56px/1 "Bebas Neue";margin:0}
+  .sides-band p{margin:0;font-family:"Bebas Neue";font-size:23px;letter-spacing:.04em;line-height:1.25}
+  .fine{margin-top:18px;color:var(--muted);font-size:14px}
+
+  /* Gallery */
+  #gallery{background:var(--ink);color:#fff}
+  #gallery .sec-head h2{color:#fff}
+  #gallery .sec-head p{color:rgba(255,255,255,.75)}
+  #gallery .sec-head .eyebrow{color:var(--sky)}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px;grid-auto-flow:dense}
+  .grid figure{margin:0;border-radius:var(--radius);overflow:hidden;position:relative;background:#0c1a3d}
+  .grid img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .grid figure:hover img{transform:scale(1.05)}
+  .grid figcaption{position:absolute;left:12px;bottom:12px;background:rgba(19,40,90,.88);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:600}
+  .g-tall{grid-row:span 2}
+  .g-wide{grid-column:span 2}
+
+  /* Story */
+  .story{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+  .badge-wrap{position:relative;max-width:420px;margin:0 auto}
+  .badge-wrap img{border-radius:50%;box-shadow:0 30px 60px -20px rgba(19,40,90,.4)}
+  .badge-wrap::before{content:"";position:absolute;inset:-18px;border-radius:50%;border:3px dashed var(--sky)}
+  .story .eyebrow{color:var(--teal)}
+  .story h2{font-size:clamp(48px,6vw,72px);color:var(--ink);margin:10px 0 20px}
+  .story p{color:var(--muted);margin:0 0 16px;max-width:36em}
+  .stats{display:flex;gap:36px;margin-top:28px;flex-wrap:wrap}
+  .stat b{display:block;font:400 54px/1 "Bebas Neue";color:var(--navy)}
+  .stat span{font-size:14px;color:var(--muted)}
+
+  /* Visit */
+  #visit{background:var(--paper)}
+  .visit{display:grid;grid-template-columns:1fr 1.15fr;gap:40px;align-items:stretch}
+  .visit-card{background:var(--navy);color:#fff;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:26px}
+  .visit-card h3{font-size:22px;color:var(--sky);letter-spacing:.06em}
+  .visit-card p{margin:6px 0 0;font-size:18px}
+  .visit-card a{text-decoration:none}
+  .visit-card a:hover{text-decoration:underline}
+  .visit-card .note{font-size:15px;color:rgba(255,255,255,.78)}
+  .map{border-radius:20px;overflow:hidden;min-height:420px;border:1px solid var(--stone)}
+  .map iframe{width:100%;height:100%;min-height:420px;border:0;display:block}
+
+  /* Events */
+  .events{background:var(--sky);color:var(--ink);border-radius:24px;padding:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+  .events h2{font-size:clamp(44px,5.5vw,68px)}
+  .events p{margin:14px 0 0;font-size:18px;max-width:30em}
+  .events .actions{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+  .events img{position:absolute;right:-30px;bottom:-30px;width:200px;opacity:.12;border-radius:50%}
+
+  footer{background:var(--ink);color:rgba(255,255,255,.8);padding:56px 0 36px;font-size:15px}
+  .foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+  .foot img{height:64px;border-radius:8px}
+  .foot h4{font:400 22px "Bebas Neue";letter-spacing:.06em;color:var(--sky);margin:0 0 10px}
+  .foot a{text-decoration:none}
+  .foot a:hover{color:#fff}
+  .social{display:inline-flex;align-items:center;gap:8px}
+  .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:13px;color:rgba(255,255,255,.55)}
+
+  /* Responsive */
+  @media (max-width:980px){
+    .hero-in{grid-template-columns:1fr;padding:56px 24px 64px}
+    .hero::after{width:60%;right:-30%;opacity:.35}
+    .stack{height:420px;max-width:560px}
+    .items{grid-template-columns:1fr}
+    .story,.visit,.events{grid-template-columns:1fr}
+    .grid{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:760px){
+    body{font-size:16px}
+    .wrap{padding:0 16px}
+    .hero-in{padding:44px 16px 56px}
+    .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:var(--navy);flex-direction:column;align-items:flex-start;padding:16px 16px 22px;gap:16px;border-top:1px solid rgba(255,255,255,.12)}
+    .nav-links.open{display:flex}
+    .menu-toggle{display:block}
+    .brand span{display:none}
+    .stack{height:340px}
+    .stamp{width:104px;height:104px}
+    .strip-in{grid-template-columns:1fr}
+    .strip-item + .strip-item{border-left:0;border-top:1px solid var(--stone)}
+    section{padding:64px 0}
+    .menu-card{padding:24px 18px}
+    .menu-note .cols{gap:14px;font-size:15px}
+    .pc{width:70px}
+    .item-name,.price{font-size:22px}
+    .grid{grid-auto-rows:160px;gap:10px}
+    .events{padding:36px 22px}
+    .visit-card{padding:28px 22px}
+    .sides-band h4{font-size:44px}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" aria-label="Feta Flav home">
+      <img src="assets/logo-wordmark.jpg" alt="Feta Flav logo">
+      <span>Feta Flav</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav class="nav-links" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Food</a>
+      <a href="#story">Our Story</a>
+      <a href="#visit">Visit</a>
+      <a class="btn btn-sky" href="tel:+18282436094">Call (828) 243-6094</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <div class="wrap hero-in">
+      <div>
+        <div class="eyebrow">Inside Oklawaha Brewing &middot; Hendersonville, NC</div>
+        <h1>Best Greek food <em>in town.</em></h1>
+        <p class="lede">Loaded gyros, house-made dips, feta fries and baklava, served up right inside the brewery. Grab a pint, grab a gyro. Made with love and tradition since 2019.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-sky" href="#menu">See the menu</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=147+1st+Ave+E+Hendersonville+NC+28792" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="hero-meta">
+          <div><b>147 1st Ave E</b><br>Downtown Hendersonville</div>
+          <div><b>92% recommend</b><br>55 reviews on Facebook</div>
+          <div><b>Dine-in &amp; takeout</b><br>Reservations available</div>
+        </div>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <figure class="a"><img src="assets/lamb-gyro.jpg" alt=""></figure>
+        <figure class="b"><img src="assets/greek-salad.jpg" alt=""></figure>
+        <figure class="c"><img src="assets/feta-fries.jpg" alt=""></figure>
+        <div class="stamp"><img src="assets/badge.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <div class="meander" role="presentation"></div>
+
+  <div class="strip">
+    <div class="wrap strip-in">
+      <div class="strip-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <div><h3>Find us at Oklawaha</h3><p>Order at our counter inside Oklawaha Brewing, 147 1st Ave E.</p></div>
+      </div>
+      <div class="strip-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 11h16M5 11l1.5 9h11L19 11M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <div><h3>Gyros from $15</h3><p>Lamb, chicken, pork, mushroom or falafel. Add a side for $2.</p></div>
+      </div>
+      <div class="strip-item">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 21h10M12 17v4M5 3h14l-1 7a6 6 0 0 1-12 0z"/></svg>
+        <div><h3>Veggie &amp; vegan friendly</h3><p>Mushroom and falafel gyros can be made vegan.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">The Menu</div>
+          <h2>Gyros, dips &amp; everything feta</h2>
+        </div>
+        <p>Our current menu. Ask about the hummus flavor of the week and check the dessert case for seasonal treats.</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu sections"></div>
+      <div class="menu-card" id="menu-panel" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Fresh off the grill</div>
+          <h2>Come hungry</h2>
+        </div>
+        <p>Shaved lamb, charred pita, piles of feta. Here's what's coming out of the kitchen.</p>
+      </div>
+      <div class="grid">
+        <figure class="g-tall"><img src="assets/gyro-fries.jpg" alt="Gyro fries topped with grilled mushrooms, tomato and tzatziki"><figcaption>Gyro Fries</figcaption></figure>
+        <figure class="g-wide"><img src="assets/chicken-gyro.jpg" alt="Grilled chicken gyro wrapped in foil"><figcaption>Chicken Gyro</figcaption></figure>
+        <figure><img src="assets/baklava.jpg" alt="Tray of Greek cream horns"><figcaption>Greek Cream Horn</figcaption></figure>
+        <figure><img src="assets/chicken-salads.jpg" alt="Greek salads topped with grilled chicken"><figcaption>Chicken Salad</figcaption></figure>
+        <figure><img src="assets/spread.jpg" alt="Spread of Greek dishes"><figcaption>Dips &amp; Shareables</figcaption></figure>
+        <figure class="g-wide"><img src="assets/feta-fries.jpg" alt="Seasoned fries covered in crumbled feta"><figcaption>Feta Fries</figcaption></figure>
+        <figure><img src="assets/greek-salad.jpg" alt="Greek salad with tomato, cucumber and feta"><figcaption>Greek Salad</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="wrap story">
+      <div class="badge-wrap"><img src="assets/badge.jpg" alt="Feta Flav badge: Best Greek Food in Town, Estd 2019, Made with Love and Tradition"></div>
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2>Made with love &amp; tradition</h2>
+        <p>Feta Flav started rolling as a food truck in 2019 with one goal: serve the best Greek food in Western North Carolina. Today you'll find us cooking inside Oklawaha Brewing in downtown Hendersonville.</p>
+        <p>Pair a gyro with a local pint, split a dip duo with friends, and save room for baklava. Every plate is built the way we like to eat: generous, fresh and loaded with feta.</p>
+        <div class="stats">
+          <div class="stat"><b>2019</b><span>Serving WNC since</span></div>
+          <div class="stat"><b>92%</b><span>Recommend us</span></div>
+          <div class="stat"><b>3.7K</b><span>Facebook fans</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Visit</div>
+          <h2>Pull up a stool</h2>
+        </div>
+        <p>We're inside Oklawaha Brewing. Order a gyro from us, grab a local pint at the bar, and make an afternoon of it.</p>
+      </div>
+      <div class="visit">
+        <div class="visit-card">
+          <div>
+            <h3>Address</h3>
+            <p><a href="https://www.google.com/maps/dir/?api=1&destination=147+1st+Ave+E+Hendersonville+NC+28792" target="_blank" rel="noopener">147 1st Ave E<br>Hendersonville, NC 28792</a></p>
+            <p class="note">Inside Oklawaha Brewing Company</p>
+          </div>
+          <div>
+            <h3>Hours</h3>
+            <p>Open with the brewery</p>
+            <p class="note">Hours can shift for private events. We post this week's hours on <a href="https://www.facebook.com/fetaflavfoodtruck/" target="_blank" rel="noopener" style="text-decoration:underline">Facebook</a>.</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p><a href="tel:+18282436094">(828) 243-6094</a></p>
+            <p><a href="mailto:chefsquaredco@gmail.com">chefsquaredco@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Map to Feta Flav at Oklawaha Brewing" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=147%201st%20Ave%20E%2C%20Hendersonville%2C%20NC%2028792&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;background:var(--paper)">
+    <div class="wrap">
+      <div class="events">
+        <div>
+          <div class="eyebrow">Private events &amp; catering</div>
+          <h2>Feed the whole crew</h2>
+          <p>Birthdays, rehearsal dinners, office lunches. Bring Feta Flav to your next event, from gyro bars to dip platters.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-navy" href="mailto:chefsquaredco@gmail.com?subject=Event%20inquiry%20for%20Feta%20Flav">Email us about your event</a>
+          <a class="btn btn-navy" style="background:#fff;color:var(--ink)" href="tel:+18282436094">Call (828) 243-6094</a>
+        </div>
+        <img src="assets/badge.jpg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="meander navy" role="presentation"></div>
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="assets/logo-wordmark.jpg" alt="Feta Flav">
+        <p style="margin:14px 0 0;max-width:22em">Serving Greek food to WNC. Best Greek food in town, made with love and tradition.</p>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        147 1st Ave E<br>Hendersonville, NC 28792<br>Inside Oklawaha Brewing
+      </div>
+      <div>
+        <h4>Say hi</h4>
+        <a href="tel:+18282436094">(828) 243-6094</a><br>
+        <a href="mailto:chefsquaredco@gmail.com">chefsquaredco@gmail.com</a><br>
+        <a class="social" href="https://www.facebook.com/fetaflavfoodtruck/" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg>
+          Follow on Facebook
+        </a>
+      </div>
+    </div>
+    <div class="legal">&copy; <span id="yr"></span> Feta Flav &middot; Hendersonville, NC</div>
+  </div>
+</footer>
+
+<script>
+  const MENU = [
+    { id:"gyros", label:"Gyros", title:"Gyros", cols:["Gyro only","With 1 side"], single:true, items:[
+      {n:"Lamb Gyro", d:"Shaved lamb and beef mixture, tzatziki, tomato, raw red onion", p:["$15","$17"]},
+      {n:"Chicken Gyro", d:"Grilled chicken, tzatziki, tomato, raw red onion, pita", p:["$15","$17"]},
+      {n:"Pork Gyro", d:"Grilled pork loin, tzatziki, tomato, raw red onion", p:["$15","$17"]},
+      {n:"Mushroom Gyro", d:"Grilled portobello mushrooms, tzatziki, tomato, raw red onion, lettuce", p:["$15","$17"], vegan:true},
+      {n:"Falafel Gyro", d:"Creamed chickpeas served with tzatziki, tomato, raw red onion, lettuce", p:["$15","$17"], vegan:true},
+    ], sides:true, fine:"Sandwiches are not cut in half." },
+    { id:"starters", label:"Dips & Starters", title:"Dips & Starters", items:[
+      {n:"Hummus", d:"Creamy chickpeas with olive oil and lemon juice. Served with grilled pita (ask about the current flavor).", p:["$10"]},
+      {n:"Tzatziki", d:"A refreshing blend of sour cream, cucumber, garlic and a hint of lemon. Served with grilled pita.", p:["$10"]},
+      {n:"Spicy Feta Spread", d:"Zesty whipped feta with jalapeños, garlic and olive oil. Served with grilled pita.", p:["$12"]},
+      {n:"Dip Duo", d:"Choose two of the dips above, served with pita. No duplicates, please.", p:["$18"]},
+      {n:"Dolmades", s:"(9)", d:"Brined grape leaves stuffed with rice. Served with tzatziki.", p:["$10"]},
+      {n:"Spicy Feta Spring Rolls", d:"Spicy feta wrapped in a spring roll wrapper, served with hot honey.", p:["$12"]},
+      {n:"Avgolemono Soup", d:"Traditional Greek lemon and egg soup with chicken.", p:["$8"]},
+      {n:"Greek Nachos", d:"Crispy pita chips topped with creamy Greek cheese sauce, Greek salad salsa, choice of lamb, chicken, pork or mushroom, and tzatziki.", p:["$18"]},
+      {n:"Gyro Fries", d:"Seasoned fries topped with tomato, onion and tzatziki. Choice of lamb, chicken, pork or mushroom.", p:["$18"]},
+      {n:"Greek Salad", d:"Romaine, tomatoes, cucumbers, red onions, Kalamata olives and creamy feta with Mad Greek vinaigrette. Add lamb, chicken, pork or mushroom for $6.", p:["$15"]},
+    ]},
+    { id:"pub", label:"Brewery Bites", title:"Brewery Bites", items:[
+      {n:"Giant Pretzel", d:"Served with Oklawaha Porter beer cheese.", p:["$15"]},
+      {n:"Boneless Buffalo Wings", s:"(8)", d:"Breaded chicken bites tossed in your choice of Buffalo, Lemon Pepper, BBQ or Parmesan Garlic. Served with celery.", p:["$10"]},
+      {n:"Beer Battered Onion Rings", d:"Fried onion rings served with ranch.", p:["$10"]},
+      {n:"Mozzarella Sticks", s:"(6)", d:"Fried cheese sticks served with ranch.", p:["$10"]},
+      {n:"Corn Dog Bites", s:"(12)", d:"", p:["$12"]},
+    ]},
+    { id:"burgers", label:"Burgers", title:"Burgers", items:[
+      {n:"Greek Burger", d:"Ground beef patty topped with lettuce, Greek salad salsa, feta cheese and tzatziki. Served with one side.", p:["$18"]},
+      {n:"Gyro Burger", d:"Ground beef patty topped with lettuce, Greek salad salsa, feta, tzatziki and sliced gyro meat. Served with one side.", p:["$20"]},
+      {n:"American Burger", d:"Ground beef patty topped with American cheese, lettuce, tomato and onion. Served with one side.", p:["$18"]},
+    ], sides:true },
+    { id:"extras", label:"Extras & Dessert", title:"Extras & Dessert", items:[
+      {n:"Baklava", d:"Layered phyllo with walnuts and almonds, soaked with simple syrup.", p:["$8"]},
+      {n:"Pita", d:"", p:["$2.50"]},
+      {n:"Side of Tzatziki", d:"", p:["$4"]},
+      {n:"Add Feta", d:"", p:["$2"]},
+      {n:"Add Lettuce", d:"", p:["$1"]},
+      {n:"Dressing", d:"", p:["$1"]},
+    ], fine:"Check out our dessert case for seasonal offerings." },
+  ];
+
+  const tabs = document.querySelector(".tabs");
+  const panel = document.getElementById("menu-panel");
+  const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+  function render(id){
+    const sec = MENU.find(m => m.id === id);
+    tabs.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.id === id));
+    panel.innerHTML = `
+      <div class="menu-note"><h3>${esc(sec.title)}</h3>${sec.cols ? `<div class="cols">${sec.cols.map(c => `<span class="pc">${esc(c)}</span>`).join("")}</div>` : ""}</div>
+      <div class="items ${sec.single ? "single" : ""}">
+        ${sec.items.map(i => `
+          <div class="item">
+            <div class="item-top">
+              <span class="item-name">${esc(i.n)}${i.s ? `<small>${esc(i.s)}</small>` : ""}${i.vegan ? `<span class="tag">Can be vegan</span>` : ""}</span>
+              <span class="dots"></span>
+              <span class="price">${sec.cols ? i.p.map(p => `<span class="pc">${p}</span>`).join("") : i.p.join("")}</span>
+            </div>
+            ${i.d ? `<p>${esc(i.d)}</p>` : ""}
+          </div>`).join("")}
+      </div>
+      ${sec.sides ? `<div class="sides-band"><h4>Sides</h4><p>Seasoned fries included<br>Upgrade to feta fries +$2 &middot; Onion rings +$2 &middot; Side salad +$4</p></div>` : ""}
+      ${sec.fine ? `<p class="fine">${esc(sec.fine)}</p>` : ""}`;
+  }
+
+  MENU.forEach((m, i) => {
+    const b = document.createElement("button");
+    b.className = "tab"; b.type = "button"; b.role = "tab";
+    b.dataset.id = m.id; b.textContent = m.label;
+    b.addEventListener("click", () => render(m.id));
+    tabs.appendChild(b);
+  });
+  render("gyros");
+
+  const toggle = document.querySelector(".menu-toggle");
+  const links = document.querySelector(".nav-links");
+  toggle.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open);
+  });
+  links.querySelectorAll("a").forEach(a => a.addEventListener("click", () => links.classList.remove("open")));
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+<script src="switcher.js"></script>
+</body>
+</html>
