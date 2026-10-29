@@ -216,3 +216,8 @@ footer .legal{border-top:1px solid #3A4557;margin-top:44px;padding-top:22px;disp
 .proof{margin-top:14px;font-style:italic;font-weight:700;background:#FFF3C4;color:#24331C;padding:8px 12px;border-radius:10px;display:inline-block;font-size:.95rem}
 /* outcome-copy: phones — headline + CTA first, mascot below */
 @media(max-width:768px){.hero-art{grid-row:2}}
+/* conversion-batch-1 */
+.next-steps{margin-top:16px;background:rgba(255,255,255,.7);border-radius:14px;padding:14px 18px;font-size:.95rem}
+.next-steps ol{margin:8px 0 0 20px;padding:0}.next-steps li{margin:4px 0}
+.sticky-book{display:none}
+@media(max-width:768px){.sticky-book{display:block;position:fixed;left:12px;right:12px;bottom:12px;z-index:50;text-align:center;background:#F28C28;color:#232B38;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:1.05rem;padding:14px 16px;border-radius:999px;box-shadow:0 10px 24px -8px rgba(35,43,56,.5);text-decoration:none;padding-bottom:calc(14px + env(safe-area-inset-bottom))}body{padding-bottom:84px}}
